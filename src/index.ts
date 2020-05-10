@@ -3,15 +3,16 @@ import "reflect-metadata";
 import cors from "cors";
 import dotenv from "dotenv";
 dotenv.config();
-import { dbconnect } from "./startup/db";
 
+import { dbconnect } from "./startup/db";
 import { sessionInit } from "./startup/session";
 import { apolloServer } from "./startup/appoloServer";
-
+import { processExit } from "./startup/exitProcess";
 import { config } from "./config";
 
 const main = async () => {
-  dbconnect();
+  processExit();
+  await dbconnect();
 
   const app = express();
 

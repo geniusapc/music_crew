@@ -1,0 +1,11 @@
+{
+  "name": "Music Crew Documentation",
+  "includeVersion": true,
+  "inputFiles": ["./src/modules/"],
+  "mode": "modules",
+  "out": "doc",
+  "disableSources": true,
+  "excludeExternals": true,
+  "hideGenerator": true,
+  "toc": true
+}

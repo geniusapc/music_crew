@@ -10,7 +10,7 @@ export const sessionInit = session({
     client: redis as any,
   }),
   name: "qid",
-  secret: config.sessionSecret,
+  secret: config.sessionSecret as any,
   resave: false,
   saveUninitialized: false,
   cookie: {

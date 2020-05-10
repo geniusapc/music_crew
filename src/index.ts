@@ -1,11 +1,14 @@
 const express = require("express");
 import "reflect-metadata";
 import cors from "cors";
-import { dbconnect } from "./startup/db";
-import { sessionInit } from "./startup/session";
-import { apolloServer } from "./startup/appoloServer";
 import dotenv from "dotenv";
 dotenv.config();
+import { dbconnect } from "./startup/db";
+
+import { sessionInit } from "./startup/session";
+import { apolloServer } from "./startup/appoloServer";
+
+import { config } from "./config";
 
 const main = async () => {
   dbconnect();
@@ -16,10 +19,9 @@ const main = async () => {
   app.use(sessionInit);
 
   await apolloServer(app);
-  const port = process.env.PORT || 8000;
 
-  app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
+  app.listen(config.port, () => {
+    console.log(`Server started on port ${config.port}`);
   });
 };
 main();

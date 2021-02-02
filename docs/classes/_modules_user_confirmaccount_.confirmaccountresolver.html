@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RegisterResolver | Music Crew Documentation - v1.0.0</title>
-	<meta name="description" content="Documentation for Music Crew Documentation - v1.0.0">
+	<title>ConfirmAccountResolver | Music Crew Documentation - v1.1.0</title>
+	<meta name="description" content="Documentation for Music Crew Documentation - v1.1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Music Crew Documentation - v1.0.0</a>
+					<a href="../index.html" class="title">Music Crew Documentation - v1.1.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_modules_user_register_.html">&quot;modules/user/Register&quot;</a>
+					<a href="../modules/_modules_user_confirmaccount_.html">&quot;modules/user/ConfirmAccount&quot;</a>
 				</li>
 				<li>
-					<a href="_modules_user_register_.registerresolver.html">RegisterResolver</a>
+					<a href="_modules_user_confirmaccount_.confirmaccountresolver.html">ConfirmAccountResolver</a>
 				</li>
 			</ul>
-			<h1>Class RegisterResolver</h1>
+			<h1>Class ConfirmAccountResolver</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RegisterResolver</span>
+						<span class="target">ConfirmAccountResolver</span>
 					</li>
 				</ul>
 			</section>
@@ -82,7 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_modules_user_register_.registerresolver.html#register" class="tsd-kind-icon">Register</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_modules_user_confirmaccount_.confirmaccountresolver.html#confirmaccout" class="tsd-kind-icon">confirm<wbr>Accout</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,10 +91,10 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="register" class="tsd-anchor"></a>
-					<h3>Register</h3>
+					<a name="confirmaccout" class="tsd-anchor"></a>
+					<h3>confirm<wbr>Accout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Register<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>firstName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lastName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UserType</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">confirm<wbr>Accout<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -103,24 +103,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>firstName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lastName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>first<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>last<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-									</ul>
+									<h5>token: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UserType</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -144,7 +130,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_modules_user_changepassword_.html">&quot;modules/user/<wbr>Change<wbr>Password&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_modules_user_confirmaccount_.html">&quot;modules/user/<wbr>Confirm<wbr>Account&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -153,7 +139,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/_modules_user_login_.html">&quot;modules/user/<wbr>Login&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_modules_user_register_.html">&quot;modules/user/<wbr>Register&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -178,10 +164,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_modules_user_register_.registerresolver.html" class="tsd-kind-icon">Register<wbr>Resolver</a>
+						<a href="_modules_user_confirmaccount_.confirmaccountresolver.html" class="tsd-kind-icon">Confirm<wbr>Account<wbr>Resolver</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_modules_user_register_.registerresolver.html#register" class="tsd-kind-icon">Register</a>
+								<a href="_modules_user_confirmaccount_.confirmaccountresolver.html#confirmaccout" class="tsd-kind-icon">confirm<wbr>Accout</a>
 							</li>
 						</ul>
 					</li>

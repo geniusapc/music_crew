@@ -3,7 +3,7 @@
   "includeVersion": true,
   "inputFiles": ["./src/modules/"],
   "mode": "modules",
-  "out": "doc",
+  "out": "docs",
   "disableSources": true,
   "excludeExternals": true,
   "hideGenerator": true,
